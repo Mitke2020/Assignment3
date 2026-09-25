@@ -1,0 +1,10 @@
+ A stack is the right choice for the undo/redo as those processes involve steps where the order of these steps is really important. 
+ Using stack for this helps us keep the right order of the steps as we can keep the history of the steps as we are moving forward, and also as we are moving backwards through our changes we can always go reverse back to the 
+ changes we have made afterwards. 
+ Stack is the right choice as it revolves around the system called LIFO(Last In First Out) where the last thing we add to the stack is the first one to be popped out, which perfectly correlates to undoing and redoing.
+
+ A queue is better suited for the help desk as it revolves around helping the customers and keeping track on the order and line of the customers. A queue is designed with the First In First Out system, where the first value
+ being added to the queue will also be the first one to pop out. That is good for our scenario, as the customers who submitted their ticket before other customers, should have the priority for the help.
+
+ My implementations differ from the built in Lists as they use nodes that are connected through "next" references. I manage these connections myself and keep track of the items in the queue or the stack.
+ Python lists allow us to access items directly by using index and provide built in methods for adding or removing items. My custom structures are limited as they follow LIFo for the stack and FIFO for the queue.
